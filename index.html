@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salvadore</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Pictures/Logo/logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/202a8dccdf.js" crossorigin="anonymous"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -17,202 +18,205 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <header>
-        <div class="nav container" id="navigation">
-            <a href="#" class="logo"><img src="Pictures/Logo/logo.png"> Boncodin-Daza Consturction</a>
-
-            <ul class="navbar">
-                <li><a href="#about" class="nav-link">ABOUT</a></li>
-                <li><a href="#services" class="nav-link">SERVICES</a></li>
-                <li><a href="#contact" class="nav-link">CONTACT US</a></li>
-            </ul>
+    <header class="header">
+        <div class="container" id="navigation">
+            <a href="#" class="logo"><img src="Pictures/Logo/logo.png"> Boncodin-Daza Construction</a>
+            <nav class="nav">
+                <ul class="navbar">
+                    <div class="nav-item">
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                    </div>
+                    <div class="nav-item">
+                    <li><a href="#services" class="nav-link">SERVICES</a></li>
+                    </div>
+                    <div class="nav-item">
+                    <li><a href="#contact" class="nav-link">CONTACT US</a></li>
+                    </div>
+                </ul>
+            </nav>
 
             <div class="menu-icon">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
         </div>
     </header>
 
-    <div class="clear"> </div>
-
-    <section class="about container" id="about"> 
-        <div class="about-content">
-            <div class="image-container">
-                <div class="grid">
-                    <div class="image bottom">
-                        <img id="pic1" src="Pictures/Granite/1.jpg" alt="granite">  
+    
+    <main>
+        <section class="about container" id="about"> 
+            <div class="about-content">
+                <div class="image-container">
+                    <div class="grid">
+                        <div class="image bottom">
+                            <img id="pic1" src="Pictures/Granite/1.jpg" alt="granite">  
+                        </div>
+                        <div class="image top">
+                            <img id="pic2" src="Pictures/Products/15.jpg" alt="salvadore">
+                        </div>
                     </div>
-                    <div class="image top">
-                        <img id="pic2" src="Pictures/Products/15.jpg" alt="salvadore">
+                    
+                </div>
+                <div class="about-text">
+                    <h2>Boncodin-Daza 
+                        <br>Construction</h2>
+                    <div class="text-container">
+                        <p>
+                            Formerly known as Salvadore Granite and Wood
+                            Flooring Services is a Construction Company that
+                            has provided beautifully designed <span style="color: #5A8396">Granite</span> works
+                            and  <span style="color: #5A8396">Wood Flooring</span> services since 2016.
+                        </p>
                     </div>
                 </div>
-                
             </div>
-            <div class="about-text">
-                <h2>Boncodin-Daza 
-                    <br>Construction</h2>
-                <p>
-                    Formerly known as Salvadore Granite and Wood
-                    <br>Flooring Services is a Construction Company that
-                    <br>has provided beautifully designed Granite works
-                    <br>and Wood Flooring services since 2016.
-                </p>
+        </section>
+ 
+        <section class="services container" id="services">
+            <h2 class="heading">Services</h2>
+            <div class="services-content">
+                    <div class="carousel granite-container " >
+                        <h3>Granites, Marbles & Synthetic Quartz</h3>
+                        <p>(Free estimate <b style="color: #5A8396;">Baguio & La Trinidad</b> )</p>
+                        <div class="slider">
+                            <div class="images">
+                                <div class="slide1 fade item">
+                                    <img src="Pictures/Granite/3.jpg" alt="Granite Beige">
+                                </div>
+                                <div class="slide1 fade item">
+                                    <img src="Pictures/Granite/4.jpg" alt="White Quartz">
+                                </div>
+                                <div class="slide1 fade item">
+                                    <img src="Pictures/Granite/5.jpg" alt="White Quartz">
+                                </div>
+                                <div class="slide1 fade item">
+                                    <img src="Pictures/Granite/13.jpg" alt="Black Granite">
+                                </div>
+                            </div>                         
+                        </div>
+                        <button class="see-more" onclick='window.location.href = "granite.html"'>
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">See More</span>
+                        </button>
+                    </div>   
+                    
+                    <div class="carousel parquet-container " >
+                        <h3>Wood Parquet Flooring</h3>
+                        <p>(Free estimate <b style="color: #5A8396;">Baguio & La Trinidad</b>)</p>
+                        <div class="slider">
+                            <div class="images">
+                                <div class="slide2 fade item">
+                                    <img src="Pictures/Parquet/7.jpg" alt="Herringbone Wood Parquet">
+                                </div>
+                                <div class="slide2 fade item">
+                                    <img src="Pictures/Parquet/6.jpg" alt="Parqquet Bona">
+                                </div>
+                                <div class="slide2 fade item">
+                                    <img src="Pictures/Parquet/4.jpg" alt="Stock Wood Parquet">
+                                </div>
+                                <div class="slide2 fade item">
+                                    <img src="Pictures/Parquet/3.jpg" alt="Wooden Stairs">
+                                </div>
+                            </div>    
+                        </div>
+                        <button class="see-more" onclick='window.location.href = "parquet.html"'>
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">See More</span>
+                        </button>
+                    </div> 
+
+                    <div class="carousel others-container " >
+                        <h3>We also offer</h3>
+                        <p>
+                            Muhon<br>
+                            Concrete Post<br>
+                            Exterior Wall Facade
+                        </p>
+                        <div class="slider">
+                            <div class="images">
+                                <div class="slide3 fade item">
+                                    <img src="Pictures/Products/5.jpg" alt="Muhon">
+                                </div>
+                                <div class="slide3 fade item">
+                                    <img src="Pictures/Products/6.jpg" alt="Post/ Poste">
+                                </div>
+                                <div class="slide3 fade item">
+                                    <img src="Pictures/Products/385434570_614731267537352_7743195371661893564_n.jpg" alt="Wall Facade">
+                                </div>
+                            </div>    
+                        </div>
+                    </div> 
+
+                    <div class="carousel bona-container " >
+                        <h3>Bona Products</h3>
+                        <p>
+                            Authorized Distributor of <strong style="color: #5A8396;">Bona Products</strong>
+                        </p>
+                        <div class="slider">
+                            <div class="images">
+                                <div class="slide4 fade item">
+                                    <img src="Pictures/Products/5.jpg" alt="Muhon">
+                                </div>
+                                <div class="slide4 fade item">
+                                    <img src="Pictures/Products/6.jpg" alt="Post/ Poste">
+                                </div>
+                                <div class="slide4 fade item">
+                                    <img src="Pictures/Products/385434570_614731267537352_7743195371661893564_n.jpg" alt="Wall Facade">
+                                </div>
+                            </div>    
+                        </div>
+                        <button class="see-more" onclick='window.location.href = "bona.html"' >
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">See More</span>
+                        </button>
+                    </div> 
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section class="contact container" id="contact">
+            <h2 class="heading">Contact Us</h2>
+            <div class="contact-content">
 
-    <section class="services container" id="services">
-        <h2 class="heading">SERVICES</h2>
-        <div class="services-content">
-                <div class="carousel granite-container " >
-                    <h3>Granites, Marbles & Synthetic Quartz</h3>
-                    <p>(Free estimate <b style="color: #5A8396;">Baguio & La Trinidad</b> )</p>
-                    <div class="slider">
-                        <div class="images">
-                            <div class="slide1 fade item">
-                                <img src="Pictures/Granite/3.jpg" alt="Granite Beige">
-                            </div>
-                            <div class="slide1 fade item">
-                                <img src="Pictures/Granite/4.jpg" alt="White Quartz">
-                            </div>
-                            <div class="slide1 fade item">
-                                <img src="Pictures/Granite/5.jpg" alt="White Quartz">
-                            </div>
-                            <div class="slide1 fade item">
-                                <img src="Pictures/Granite/13.jpg" alt="Black Granite">
-                            </div>
-                        </div>                         
+                <div class="details-container">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d804.6310631588876!2d120.58435798443924!3d16.39982348386338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a109216234e9%3A0x23e70906c4e8b5d6!2sBoncodin-Daza%20Construction%20(formerly%20Salvadore%20Granite%20and%20Parquet%20)!5e0!3m2!1sen!2sph!4v1698401487300!5m2!1sen!2sph" 
+                        width="430" height="350" style="border:0; border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p>
+                            #67 Imelda Marcos Barangay, KM 3 Marcos
+                            <br> Highway Baguio City, 2600 Philippines
+                        </p>
                     </div>
-                    <button class="see-more">
-                        <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">See More</span>
-                      </button>
-                </div>   
-                
-                <div class="carousel parquet-container " >
-                    <h3>Wood Parquet Flooring</h3>
-                    <p>(Free estimate <b style="color: #5A8396;">Baguio & La Trinidad</b> )</p>
-                    <div class="slider">
-                        <div class="images">
-                            <div class="slide2 fade item">
-                                <img src="Pictures/Parquet/7.jpg" alt="Herringbone Wood Parquet">
-                            </div>
-                            <div class="slide2 fade item">
-                                <img src="Pictures/Parquet/6.jpg" alt="Parqquet Bona">
-                            </div>
-                            <div class="slide2 fade item">
-                                <img src="Pictures/Parquet/4.jpg" alt="Stock Wood Parquet">
-                            </div>
-                            <div class="slide2 fade item">
-                                <img src="Pictures/Parquet/3.jpg" alt="Wooden Stairs">
-                            </div>
-                        </div>    
+                    <div class="social-container">
+                        <a href="https://www.facebook.com/profile.php?id=100063647394893" target="_blank"><i class="fa-brands fa-facebook fa-2xl" ></i> Salvadore Granite and Wood flooring services</a> 
+                        <a href=""><i class="fa-solid fa-envelope fa-2xl"> </i> jerrylyndaza@ymail.com</a>
+                        <a href=""><i class="fa-solid fa-message fa-2xl"> </i> +6391 9843 2243 - Jhe</a>
                     </div>
-                    <button class="see-more">
-                        <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">See More</span>
-                      </button>
-                </div> 
-
-                <div class="carousel others-container " >
-                    <h3>We also offer</h3>
-                    <p>
-                        Muhon<br>
-                        Concrete Post<br>
-                        Exterior Wall Facade
-                    </p>
-                    <div class="slider">
-                        <div class="images">
-                            <div class="slide3 fade item">
-                                <img src="Pictures/Products/5.jpg" alt="Muhon">
-                            </div>
-                            <div class="slide3 fade item">
-                                <img src="Pictures/Products/6.jpg" alt="Post/ Poste">
-                            </div>
-                            <div class="slide3 fade item">
-                                <img src="Pictures/Products/385434570_614731267537352_7743195371661893564_n.jpg" alt="Wall Facade">
-                            </div>
-                        </div>    
-                    </div>
-                    <button class="see-more">
-                        <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">See More</span>
-                      </button>
-                </div> 
-
-                <div class="carousel bona-container " >
-                    <h3>Bona Products</h3>
-                    <p>
-                        Authorized Distributor of <strong style="color: #5A8396;">Bona Products</strong>
-                    </p>
-                    <div class="slider">
-                        <div class="images">
-                            <div class="slide4 fade item">
-                                <img src="Pictures/Products/5.jpg" alt="Muhon">
-                            </div>
-                            <div class="slide4 fade item">
-                                <img src="Pictures/Products/6.jpg" alt="Post/ Poste">
-                            </div>
-                            <div class="slide4 fade item">
-                                <img src="Pictures/Products/385434570_614731267537352_7743195371661893564_n.jpg" alt="Wall Facade">
-                            </div>
-                        </div>    
-                    </div>
-                    <button class="see-more">
-                        <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">See More</span>
-                      </button>
-                </div> 
-        </div>
-    </section>
-
-    <section class="contact container" id="contact">
-        <h2 class="heading">CONTACT US</h2>
-        <div class="contact-content">
-
-            <div class="details-container">
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d804.6310631588876!2d120.58435798443924!3d16.39982348386338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a109216234e9%3A0x23e70906c4e8b5d6!2sBoncodin-Daza%20Construction%20(formerly%20Salvadore%20Granite%20and%20Parquet%20)!5e0!3m2!1sen!2sph!4v1698401487300!5m2!1sen!2sph" 
-                    width="430" height="350" style="border:0; border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <p>
-                        #67 Imelda Marcos Barangay, KM 3 Marcos
-                        <br> Highway Baguio City, 2600 Philippines
-                    </p>
                 </div>
-                <div class="social-container">
-                    <a href="https://www.facebook.com/profile.php?id=100063647394893"><i class="fa-brands fa-facebook fa-2xl" ></i> Salvadore Granite and Wood flooring services</a> 
-                    <a href=""><i class="fa-solid fa-envelope fa-2xl"> </i> jerrylyndaza@ymail.com</a>
-                    <a href=""><i class="fa-solid fa-message fa-2xl"> </i> +6391 9843 2243 - Jhe</a>
+
+                <div class="form-container">
+                    <div class="contact-form" id="contact-form" >
+                        <input type="text" placeholder="Name" class="name" id="name">
+                        <input type="email" placeholder="Email Address" class="email" id="email" required>
+                        <input type="tel" placeholder="Phone Number" class="phone" id="phone"  maxlength="11">
+                        <textarea cols="30" rows="10" placeholder="Write message here..." class="message" id="message" required></textarea>
+                    <button class="button" id="button">Send</button>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="form-container">
-                <div class="contact-form" id="contact-form" >
-                    <input type="text" placeholder="Name" class="name" id="name">
-                    <input type="email" placeholder="Email Address" class="email" id="email" required>
-                    <input type="tel" placeholder="Phone Number" class="phone" id="phone"  maxlength="11">
-                    <textarea cols="30" rows="10" placeholder="Write message here..." class="message" id="message" required></textarea>
-                   <button class="button" id="button">Send</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer container" id="footer">  
-        <p>&#169; 2023 by Boncodin-Daza Construction</p>
-    </footer>
-   
-    <script src="main.js"></script>
+        <footer class="footer container" id="footer">  
+            <p>&#169; 2023 by Boncodin-Daza Construction</p>
+        </footer>
+    
+        <script src="main.js"></script>
+    </main>
 </body>
 </html>

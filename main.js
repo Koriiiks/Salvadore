@@ -1,16 +1,31 @@
 window.onscroll = function() {fixNav()};
 
-let navbar = document.getElementById("navigation");
-let sticky = navbar.offsetTop;
+var navbar = document.getElementById("navigation");
 
-function fixNav(){
-    if(window.scrollY >= sticky){
-        navbar.classList.add("sticky");
-    } else{
-        navbar.remove("sticky");
-    }
+
+var sticky = navbar.offsetTop;
+
+
+function fixNav() {
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
 
+const navEl = document.querySelector(".nav");
+const menuIcon = document.querySelector(".menu-icon");
+
+menuIcon.addEventListener("click", () =>{
+    navEl.classList.toggle("nav--open");
+    menuIcon.classList.toggle("menu--open");
+});
+
+navEl.addEventListener('click', () =>{
+    navEl.classList.remove("nav--open");
+    menuIcon.classList.remove("menu--open");
+});
 
 
 let gIndex = 0;
@@ -83,6 +98,10 @@ sendBtn.addEventListener("click", function(event){
                 title: 'Sent',
                 text: 'Your Email is successfully sent',
               })
+              document.getElementById("name").value = "";
+              document.getElementById("email").value = "";
+              document.getElementById("phone").value = "";
+              document.getElementById("message").value = "";
         })
         .catch((err) => console.log(err));
 })
